@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAcademy</title>
+    <link rel="stylesheet" href="CSS/miEstilo.css">
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>TechAcademy</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="mentoria.html">Mentoria</a></li>
+                <li><a href="inscripcion.html" class="btn_destacado">Inscribirse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="inscripcion">
+            <h2>Formulario de Inscripción</h2>
+            <p class="descripcion">Completa el siguiente formulario para poder inscribirte al curso.</p>
+            <form action="#" method="post" class="formulario_inscripcion">
+                <label for="nombre"><h4>Nombre:</h4></label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email"><h4>Correo Electrónico:</h4></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="curso"><h4>Curso o Mentoría de Interés:</h4></label>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="frontend">Desarrollo web FrontEnd</option>
+                    <option value="python">Phython para ciencia de datos</option>
+                    <option value="bases">Bases de datos robustas</option>
+                    <option value="backend">Desarrollo web BackEnd</option>
+                    <option value="mentoria">Mentoría Personalizada</option>
+                </select>
+
+                <button type="submit" class="btn_enviar">Enviar inscripción</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 TechAcademy</p>
+    </footer>
+</body>
+</html>
